@@ -1,0 +1,1079 @@
+{
+    "data": {
+        "address": "300 Hemlock St, Vacaville, CA 95688",
+        "latitude": 38.3649399,
+        "longitude": -121.9999297,
+        "jurisdictions": [
+            {
+                "code": "US",
+                "id": 1,
+                "name": "United States of America",
+                "flag": null,
+                "level": "federal",
+                "logo": null,
+                "state_abbr": null,
+                "parent_id": null,
+                "ocd_id": "ocd-division/country:us",
+                "geoid": "US",
+                "seats": [
+                    {
+                        "id": 6831,
+                        "label": "U.S. Representative from Alaska At Large",
+                        "body": {
+                            "id": 1957,
+                            "name": "United States House of Representatives"
+                        },
+                        "holder": {
+                            "id": 6182,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Nicholas Begich",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 6910,
+                        "label": "U.S. Representative from Delaware At Large",
+                        "body": {
+                            "id": 1957,
+                            "name": "United States House of Representatives"
+                        },
+                        "holder": {
+                            "id": 6258,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Sarah McBride",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 7133,
+                        "label": "U.S. Representative from North Dakota At Large",
+                        "body": {
+                            "id": 1957,
+                            "name": "United States House of Representatives"
+                        },
+                        "holder": {
+                            "id": 6479,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Julie Fedorchak",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 7186,
+                        "label": "U.S. Representative from South Dakota At Large",
+                        "body": {
+                            "id": 1957,
+                            "name": "United States House of Representatives"
+                        },
+                        "holder": {
+                            "id": 3145,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Dusty Johnson",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 7238,
+                        "label": "U.S. Representative from Vermont At Large",
+                        "body": {
+                            "id": 1957,
+                            "name": "United States House of Representatives"
+                        },
+                        "holder": {
+                            "id": 6544,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Becca Balint",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 7286,
+                        "label": "U.S. Representative from Wyoming At Large",
+                        "body": {
+                            "id": 1957,
+                            "name": "United States House of Representatives"
+                        },
+                        "holder": {
+                            "id": 6597,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Harriet Hageman",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    }
+                ],
+                "display_name": "United States of America",
+                "seats_filled": 6,
+                "seats_total": 6
+            },
+            {
+                "code": "CA",
+                "id": 3274,
+                "name": "California",
+                "flag": null,
+                "level": "state",
+                "logo": null,
+                "state_abbr": "CA",
+                "parent_id": 1,
+                "ocd_id": "ocd-division/country:us/state:ca",
+                "geoid": "06",
+                "seats": [
+                    {
+                        "id": 5785,
+                        "label": "Associate Justice",
+                        "body": {
+                            "id": 1671,
+                            "name": "Supreme Court of California"
+                        },
+                        "holder": {
+                            "id": 5035,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Carol Corrigan",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 5789,
+                        "label": "Associate Justice, Seat 2",
+                        "body": {
+                            "id": 1671,
+                            "name": "Supreme Court of California"
+                        },
+                        "holder": {
+                            "id": 5036,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Goodwin H. Liu",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 5790,
+                        "label": "Associate Justice, Seat 3",
+                        "body": {
+                            "id": 1671,
+                            "name": "Supreme Court of California"
+                        },
+                        "holder": {
+                            "id": 5037,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Leondra R. Kruger",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 5791,
+                        "label": "Associate Justice, Seat 4",
+                        "body": {
+                            "id": 1671,
+                            "name": "Supreme Court of California"
+                        },
+                        "holder": {
+                            "id": 5038,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Joshua P. Groban",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 5792,
+                        "label": "Associate Justice, Seat 5",
+                        "body": {
+                            "id": 1671,
+                            "name": "Supreme Court of California"
+                        },
+                        "holder": {
+                            "id": 5039,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Martin J. Jenkins",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 5793,
+                        "label": "Associate Justice, Seat 6",
+                        "body": {
+                            "id": 1671,
+                            "name": "Supreme Court of California"
+                        },
+                        "holder": {
+                            "id": 5040,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Kelli M. Evans",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 5786,
+                        "label": "Board Member, District 1",
+                        "body": {
+                            "id": 1672,
+                            "name": "California State Board of Equalization"
+                        },
+                        "holder": {
+                            "id": 5041,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Ted Gaines",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 5787,
+                        "label": "Board Member, District 2",
+                        "body": {
+                            "id": 1672,
+                            "name": "California State Board of Equalization"
+                        },
+                        "holder": {
+                            "id": 5042,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Sally J. Lieber",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 5788,
+                        "label": "Board Member, District 3",
+                        "body": {
+                            "id": 1672,
+                            "name": "California State Board of Equalization"
+                        },
+                        "holder": {
+                            "id": 5043,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Antonio Vazquez",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 5794,
+                        "label": "Board Member, District 4",
+                        "body": {
+                            "id": 1672,
+                            "name": "California State Board of Equalization"
+                        },
+                        "holder": {
+                            "id": 5044,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Mike Schaefer",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 5795,
+                        "label": "Board Member, State Controller (ex officio)",
+                        "body": {
+                            "id": 1672,
+                            "name": "California State Board of Equalization"
+                        },
+                        "holder": null
+                    },
+                    {
+                        "id": 5784,
+                        "label": "Chief Justice of California",
+                        "body": {
+                            "id": 1671,
+                            "name": "Supreme Court of California"
+                        },
+                        "holder": {
+                            "id": 5034,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Patricia Guerrero",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 6732,
+                        "label": "U.S. Senator from California (Class I)",
+                        "body": {
+                            "id": 1956,
+                            "name": "United States Senate"
+                        },
+                        "holder": {
+                            "id": 6086,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Adam Schiff",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 6733,
+                        "label": "U.S. Senator from California (Class III)",
+                        "body": {
+                            "id": 1956,
+                            "name": "United States Senate"
+                        },
+                        "holder": {
+                            "id": 2496,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Alex Padilla",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    }
+                ],
+                "display_name": "California",
+                "seats_filled": 13,
+                "seats_total": 14
+            },
+            {
+                "code": "CD4",
+                "id": 3558,
+                "name": "Congressional District 4",
+                "flag": null,
+                "level": "congressional_district",
+                "logo": null,
+                "state_abbr": "CA",
+                "parent_id": null,
+                "ocd_id": "ocd-division/country:us/state:ca/cd:4",
+                "geoid": "0604",
+                "seats": [
+                    {
+                        "id": 6848,
+                        "label": "U.S. Representative from California's 4th District",
+                        "body": {
+                            "id": 1957,
+                            "name": "United States House of Representatives"
+                        },
+                        "holder": {
+                            "id": 6199,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Mike Thompson",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    }
+                ],
+                "display_name": "Congressional District 4",
+                "seats_filled": 1,
+                "seats_total": 1
+            },
+            {
+                "code": "SD3",
+                "id": 81536,
+                "name": "State Senate District 3",
+                "flag": null,
+                "level": "state_legislative_upper",
+                "logo": null,
+                "state_abbr": "CA",
+                "parent_id": null,
+                "ocd_id": "ocd-division/country:us/state:ca/sldu:3",
+                "geoid": "06003",
+                "seats": [
+                    {
+                        "id": 5644,
+                        "label": "State Senator, District 3",
+                        "body": {
+                            "id": 1655,
+                            "name": "California State Senate"
+                        },
+                        "holder": {
+                            "id": 4913,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Christopher Cabaldon",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    }
+                ],
+                "display_name": "State Senate District 3",
+                "seats_filled": 1,
+                "seats_total": 1
+            },
+            {
+                "code": "AD11",
+                "id": 81943,
+                "name": "Assembly District 11",
+                "flag": null,
+                "level": "state_legislative_lower",
+                "logo": null,
+                "state_abbr": "CA",
+                "parent_id": null,
+                "ocd_id": "ocd-division/country:us/state:ca/sldl:11",
+                "geoid": "06011",
+                "seats": [
+                    {
+                        "id": 5365,
+                        "label": "Assembly Member, District 11",
+                        "body": {
+                            "id": 1455,
+                            "name": "California State Assembly"
+                        },
+                        "holder": {
+                            "id": 4647,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Lori D. Wilson",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    }
+                ],
+                "display_name": "Assembly District 11",
+                "seats_filled": 1,
+                "seats_total": 1
+            },
+            {
+                "code": "SOL",
+                "id": 2532,
+                "name": "Solano",
+                "flag": null,
+                "level": "county",
+                "logo": null,
+                "state_abbr": "CA",
+                "parent_id": null,
+                "ocd_id": "ocd-division/country:us/state:ca/county:solano",
+                "geoid": "06095",
+                "seats": [],
+                "display_name": null,
+                "seats_filled": 0,
+                "seats_total": 0
+            },
+            {
+                "code": "D4",
+                "id": 122171,
+                "name": "Solano County Supervisorial District 4",
+                "flag": null,
+                "level": "county_district",
+                "logo": null,
+                "state_abbr": "CA",
+                "parent_id": 2532,
+                "ocd_id": "ocd-division/country:us/state:ca/county:solano/council_district:4",
+                "geoid": "06095D04",
+                "seats": [
+                    {
+                        "id": 32,
+                        "label": "Supervisor, District 4",
+                        "body": {
+                            "id": 5,
+                            "name": "Solano County Board of Supervisors"
+                        },
+                        "holder": {
+                            "id": 39,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "John M. Vasquez",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    }
+                ],
+                "display_name": "Solano County Supervisorial District 4",
+                "seats_filled": 1,
+                "seats_total": 1
+            },
+            {
+                "code": "VAC",
+                "id": 70118,
+                "name": "Vacaville",
+                "flag": null,
+                "level": "place",
+                "logo": null,
+                "state_abbr": "CA",
+                "parent_id": null,
+                "ocd_id": "ocd-division/country:us/state:ca/place:vacaville",
+                "geoid": "0681554",
+                "seats": [
+                    {
+                        "id": 1,
+                        "label": "Mayor",
+                        "body": {
+                            "id": 1,
+                            "name": "Vacaville City Council"
+                        },
+                        "holder": {
+                            "id": 1,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "John Carli",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "label": "Council Member, District 1",
+                        "body": {
+                            "id": 1,
+                            "name": "Vacaville City Council"
+                        },
+                        "holder": {
+                            "id": 13984,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Roy Stockton",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "label": "Council Member, District 2",
+                        "body": {
+                            "id": 1,
+                            "name": "Vacaville City Council"
+                        },
+                        "holder": {
+                            "id": 13985,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Gregory Ritchie II",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "label": "Council Member, District 3",
+                        "body": {
+                            "id": 1,
+                            "name": "Vacaville City Council"
+                        },
+                        "holder": {
+                            "id": 11,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Michael Silva",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "label": "Council Member, District 4",
+                        "body": {
+                            "id": 1,
+                            "name": "Vacaville City Council"
+                        },
+                        "holder": {
+                            "id": 13986,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Sarah Chapman",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 6,
+                        "label": "Council Member, District 5",
+                        "body": {
+                            "id": 1,
+                            "name": "Vacaville City Council"
+                        },
+                        "holder": {
+                            "id": 13987,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Ted Fremouw",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 7,
+                        "label": "Council Member, District 6",
+                        "body": {
+                            "id": 1,
+                            "name": "Vacaville City Council"
+                        },
+                        "holder": {
+                            "id": 14,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Jeanette Wylie",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 15,
+                        "label": "Parks & Recreation Commissioner, Seat 1",
+                        "body": {
+                            "id": 3,
+                            "name": "Parks & Recreation Commission"
+                        },
+                        "holder": {
+                            "id": 22,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Emily Gollinger",
+                            "image_url": null,
+                            "term_end": "2027-03-31"
+                        }
+                    },
+                    {
+                        "id": 16,
+                        "label": "Parks & Recreation Commissioner, Seat 2",
+                        "body": {
+                            "id": 3,
+                            "name": "Parks & Recreation Commission"
+                        },
+                        "holder": {
+                            "id": 20790,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Kenya Serna",
+                            "image_url": null,
+                            "term_end": "2028-03-31"
+                        }
+                    },
+                    {
+                        "id": 17,
+                        "label": "Parks & Recreation Commissioner, Seat 3",
+                        "body": {
+                            "id": 3,
+                            "name": "Parks & Recreation Commission"
+                        },
+                        "holder": null
+                    },
+                    {
+                        "id": 18,
+                        "label": "Parks & Recreation Commissioner, Seat 4",
+                        "body": {
+                            "id": 3,
+                            "name": "Parks & Recreation Commission"
+                        },
+                        "holder": {
+                            "id": 25,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Mark Frazier",
+                            "image_url": null,
+                            "term_end": "2028-03-31"
+                        }
+                    },
+                    {
+                        "id": 19,
+                        "label": "Parks & Recreation Commissioner, Seat 5",
+                        "body": {
+                            "id": 3,
+                            "name": "Parks & Recreation Commission"
+                        },
+                        "holder": {
+                            "id": 20791,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Heather Krause",
+                            "image_url": null,
+                            "term_end": "2027-03-31"
+                        }
+                    },
+                    {
+                        "id": 20,
+                        "label": "Parks & Recreation Commissioner, Seat 6",
+                        "body": {
+                            "id": 3,
+                            "name": "Parks & Recreation Commission"
+                        },
+                        "holder": {
+                            "id": 27,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Blair Aas",
+                            "image_url": null,
+                            "term_end": "2028-03-31"
+                        }
+                    },
+                    {
+                        "id": 21,
+                        "label": "Parks & Recreation Commissioner, Seat 7",
+                        "body": {
+                            "id": 3,
+                            "name": "Parks & Recreation Commission"
+                        },
+                        "holder": {
+                            "id": 20792,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Ryan Wold",
+                            "image_url": null,
+                            "term_end": "2028-03-31"
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "label": "Planning Commissioner, Seat 1",
+                        "body": {
+                            "id": 2,
+                            "name": "Planning Commission"
+                        },
+                        "holder": {
+                            "id": 15,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Joseph Dingman",
+                            "image_url": null,
+                            "term_end": "2027-03-31"
+                        }
+                    },
+                    {
+                        "id": 9,
+                        "label": "Planning Commissioner, Seat 2",
+                        "body": {
+                            "id": 2,
+                            "name": "Planning Commission"
+                        },
+                        "holder": {
+                            "id": 16,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "John Wilkerson",
+                            "image_url": null,
+                            "term_end": "2028-03-31"
+                        }
+                    },
+                    {
+                        "id": 10,
+                        "label": "Planning Commissioner, Seat 3",
+                        "body": {
+                            "id": 2,
+                            "name": "Planning Commission"
+                        },
+                        "holder": {
+                            "id": 17,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Noel Vargas",
+                            "image_url": null,
+                            "term_end": "2027-03-31"
+                        }
+                    },
+                    {
+                        "id": 11,
+                        "label": "Planning Commissioner, Seat 4",
+                        "body": {
+                            "id": 2,
+                            "name": "Planning Commission"
+                        },
+                        "holder": {
+                            "id": 20793,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "David LeRoy",
+                            "image_url": null,
+                            "term_end": "2028-03-31"
+                        }
+                    },
+                    {
+                        "id": 12,
+                        "label": "Planning Commissioner, Seat 5",
+                        "body": {
+                            "id": 2,
+                            "name": "Planning Commission"
+                        },
+                        "holder": {
+                            "id": 19,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Ashley Banta",
+                            "image_url": null,
+                            "term_end": "2027-03-31"
+                        }
+                    },
+                    {
+                        "id": 13,
+                        "label": "Planning Commissioner, Seat 6",
+                        "body": {
+                            "id": 2,
+                            "name": "Planning Commission"
+                        },
+                        "holder": {
+                            "id": 20,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Doug Beaumont",
+                            "image_url": null,
+                            "term_end": "2028-03-31"
+                        }
+                    },
+                    {
+                        "id": 14,
+                        "label": "Planning Commissioner, Seat 7",
+                        "body": {
+                            "id": 2,
+                            "name": "Planning Commission"
+                        },
+                        "holder": {
+                            "id": 21,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Bob Hampton",
+                            "image_url": null,
+                            "term_end": "2028-03-31"
+                        }
+                    }
+                ],
+                "display_name": "City of Vacaville",
+                "seats_filled": 20,
+                "seats_total": 21
+            },
+            {
+                "code": "VUSD",
+                "id": 77297,
+                "name": "Vacaville Unified School District",
+                "flag": null,
+                "level": "school_district_unified",
+                "logo": null,
+                "state_abbr": "CA",
+                "parent_id": 3274,
+                "ocd_id": "ocd-division/country:us/state:ca/county:solano/school_district:vacaville_unified",
+                "geoid": "0640590",
+                "seats": [
+                    {
+                        "id": 22,
+                        "label": "Trustee, Area 1",
+                        "body": {
+                            "id": 4,
+                            "name": "VUSD Board of Education"
+                        },
+                        "holder": {
+                            "id": 29,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Nancy Dunn",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 23,
+                        "label": "Trustee, Area 2",
+                        "body": {
+                            "id": 4,
+                            "name": "VUSD Board of Education"
+                        },
+                        "holder": {
+                            "id": 30,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Daniel Garcia",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 24,
+                        "label": "Trustee, Area 3",
+                        "body": {
+                            "id": 4,
+                            "name": "VUSD Board of Education"
+                        },
+                        "holder": {
+                            "id": 31,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "John Jansen",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 25,
+                        "label": "Trustee, Area 4",
+                        "body": {
+                            "id": 4,
+                            "name": "VUSD Board of Education"
+                        },
+                        "holder": {
+                            "id": 32,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Audra Orr",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 26,
+                        "label": "Trustee, Area 5",
+                        "body": {
+                            "id": 4,
+                            "name": "VUSD Board of Education"
+                        },
+                        "holder": {
+                            "id": 33,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Santiago Serrato",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 27,
+                        "label": "Trustee, Area 6",
+                        "body": {
+                            "id": 4,
+                            "name": "VUSD Board of Education"
+                        },
+                        "holder": {
+                            "id": 34,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Amy Tran Russell",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    },
+                    {
+                        "id": 28,
+                        "label": "Trustee, Area 7",
+                        "body": {
+                            "id": 4,
+                            "name": "VUSD Board of Education"
+                        },
+                        "holder": {
+                            "id": 35,
+                            "image": null,
+                            "term_start": null,
+                            "image_source": null,
+                            "image_license": null,
+                            "full_name": "Michele Guerra",
+                            "image_url": null,
+                            "term_end": null
+                        }
+                    }
+                ],
+                "display_name": "Vacaville Unified School District",
+                "seats_filled": 7,
+                "seats_total": 7
+            }
+        ]
+    }
+}
