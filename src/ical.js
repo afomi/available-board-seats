@@ -8,7 +8,7 @@ export function calendar(result, { name = "Available board seats", now = new Dat
     .filter((s) => !s.past)
     .flatMap((s) => [
       "BEGIN:VEVENT",
-      `UID:seat-${s.seat_id}-${s.term_end}@jurisdictional-example-available-board-seats`,
+      `UID:seat-${s.seat_id}-${s.term_end}@jurisdictional-available-board-seats`,
       `DTSTAMP:${stamp}`,
       `DTSTART;VALUE=DATE:${s.term_end.replaceAll("-", "")}`,
       `SUMMARY:${text(`Term ends: ${s.seat}, ${s.body}`)}`,
@@ -21,7 +21,7 @@ export function calendar(result, { name = "Available board seats", now = new Dat
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Jurisdictional//example-available-board-seats//EN",
+    "PRODID:-//Jurisdictional//available-board-seats//EN",
     "CALSCALE:GREGORIAN",
     `X-WR-CALNAME:${text(name)}`,
     ...events,

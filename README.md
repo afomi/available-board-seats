@@ -1,5 +1,9 @@
 # Available board seats
 
+> **A [Jurisdictional](https://jurisdictional.org) prototype.**
+> Jurisdictional is the open, sourced map of who governs every U.S. address; this app shows what one call to its API can do.
+> Fork it.
+
 For any U.S. address, find the board, commission and council seats you could fill: the ones open now, and the ones whose terms end soon.
 Residents learn when to apply or run, and can subscribe to the same list as a calendar feed.
 
@@ -15,6 +19,12 @@ Each seat that represents the address comes back with its holder and, where it i
 Node 20 or later, no dependencies.
 
 ## Try it
+
+In your browser: [afomi.github.io/available-board-seats](https://afomi.github.io/available-board-seats/).
+That page is `index.html`, served by GitHub Pages; it calls the API from your browser and offers the list as a one-time `.ics` download.
+A calendar subscription that refreshes needs the server below.
+
+From the command line:
 
 ```sh
 node bin/available-board-seats.js "300 Hemlock St, Vacaville, CA 95688"
@@ -49,6 +59,7 @@ npm start        # http://localhost:3000
 
 | Route | What it does |
 | --- | --- |
+| `GET /` | The same page as GitHub Pages. |
 | `GET /seats?address=…&days=365` | The watch list as JSON (`lat` and `lng` also work). |
 | `GET /calendar.ics?address=…&days=365` | An iCalendar (RFC 5545) feed: one all-day event per seat on its term end. |
 
@@ -60,7 +71,8 @@ Calendar apps refresh the feed on their own schedule, so new term dates show up 
 - `src/jurisdictional.js`: the API call.
 - `src/watch.js`: sorts seats into ending, open and unknown, and formats the text.
 - `src/ical.js`: the iCalendar feed, with RFC 5545 text escaping and line folding.
-- `src/server.js`: the JSON and calendar routes.
+- `index.html`: the page; it imports `src/jurisdictional.js`, `src/watch.js` and `src/ical.js` in the browser.
+- `src/server.js`: serves the page, the JSON and the calendar routes.
 - `bin/available-board-seats.js`: the command line.
 - `test/`: run with `npm test`, against a recorded API response (no network).
 

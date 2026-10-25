@@ -2,8 +2,11 @@
 // Reads are free: 100 a day without a token, 2,000 with a free one
 // (JURISDICTIONAL_TOKEN, from https://jurisdictional.org/auth/cli).
 
-export const BASE_URL = process.env.JURISDICTIONAL_BASE_URL ?? "https://jurisdictional.org";
-const TOKEN = process.env.JURISDICTIONAL_TOKEN;
+// In a browser (the GitHub Pages site) there is no process.env.
+const env = globalThis.process?.env ?? {};
+
+export const BASE_URL = env.JURISDICTIONAL_BASE_URL ?? "https://jurisdictional.org";
+const TOKEN = env.JURISDICTIONAL_TOKEN;
 
 // Returns the `data` of GET /api/v1/juricode: the address (when given), the
 // geocoded point, and every jurisdiction containing it, each with its seats.

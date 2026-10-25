@@ -85,3 +85,17 @@ test("a bad days value is refused, not defaulted", async (t) => {
   assert.equal(response.status, 422);
   assert.deepEqual(await response.json(), { error: "days must be a whole number of days." });
 });
+
+test("the server serves the same static page as GitHub Pages", async (t) => {
+  const server = app().listen(0);
+  t.after(() => server.close());
+  const base = `http://localhost:${server.address().port}`;
+
+  const page = await fetch(`${base}/`);
+  assert.match(await page.text(), /import \{ calendar \} from "\.\/src\/ical\.js"/);
+
+  for (const module of ["jurisdictional", "watch", "ical"]) {
+    const response = await fetch(`${base}/src/${module}.js`);
+    assert.equal(response.headers.get("content-type"), "text/javascript");
+  }
+});

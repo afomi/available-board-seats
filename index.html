@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+    <title>Available board seats</title>
+    <style>
+      :root { --bg: #fafaf9; --fg: #1c1917; --muted: #78716c; --line: #e7e5e4; --accent: #2563eb; --panel: #ffffff; }
+      @media (prefers-color-scheme: dark) {
+        :root { --bg: #0f191c; --fg: #f5f5f4; --muted: #a8a29e; --line: #334155; --accent: #60a5fa; --panel: #1e293b; }
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, sans-serif; }
+      main { max-width: 44rem; margin: 0 auto; padding: 2rem 1rem; }
+      h1 { margin: 0 0 0.25rem; font-size: 1.75rem; }
+      p { color: var(--muted); margin: 0 0 1.5rem; }
+      a { color: var(--accent); }
+      form { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+      input, select { padding: 0.6rem; font: inherit; border: 1px solid var(--line); background: var(--panel); color: var(--fg); }
+      input { flex: 1 1 16rem; }
+      button { padding: 0.6rem 1rem; font: inherit; border: 0; background: var(--fg); color: var(--bg); cursor: pointer; }
+      pre { padding: 1rem; border: 1px solid var(--line); background: var(--panel); font: 14px/1.5 ui-monospace, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Available board seats</h1>
+      <p>
+        Type a U.S. street address to see the board, commission and council seats there that are open now, or whose terms end soon.
+        Seats come from the open
+        <a href="https://jurisdictional.org/developers">Jurisdictional API</a>.
+      </p>
+      <form id="ask">
+        <label
+          for="address"
+          hidden
+        >Address</label>
+        <input
+          id="address"
+          name="address"
+          autocomplete="street-address"
+          placeholder="300 Hemlock St, Vacaville, CA 95688"
+          required
+        >
+        <label
+          for="days"
+          hidden
+        >Look ahead</label>
+        <select
+          id="days"
+          name="days"
+        >
+          <option value="90">Next 3 months</option>
+          <option value="180">Next 6 months</option>
+          <option
+            value="365"
+            selected
+          >Next 12 months</option>
+          <option value="730">Next 2 years</option>
+        </select>
+        <button type="submit">Find seats</button>
+      </form>
+      <pre
+        id="result"
+        aria-live="polite"
+        hidden
+      ></pre>
+      <p>
+        <a
+          id="download"
+          download="available-board-seats.ics"
+          hidden
+        >Download these term ends as a calendar (.ics)</a>
+      </p>
+    </main>
+    <script type="module">
+      import { juricode } from "./src/jurisdictional.js";
+      import { watch, formatText } from "./src/watch.js";
+      import { calendar } from "./src/ical.js";
+
+      const result = document.getElementById("result");
+      const download = document.getElementById("download");
+
+      document.getElementById("ask").addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const address = event.target.address.value.trim();
+        const days = Number(event.target.days.value);
+
+        result.hidden = false;
+        download.hidden = true;
+        result.textContent = "Looking that up…";
+
+        try {
+          const data = await juricode({ address });
+          const seats = watch(data, { days });
+          result.textContent = `${data.address}\n\n${formatText(seats)}`;
+
+          const ics = calendar(seats, { name: `Available board seats: ${data.address}` });
+          URL.revokeObjectURL(download.href);
+          download.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
+          download.hidden = false;
+        } catch (error) {
+          result.textContent = error.message;
+        }
+      });
+    </script>
+  </body>
+</html>

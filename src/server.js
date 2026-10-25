@@ -1,9 +1,19 @@
 import { createServer } from "node:http";
+import { readFile } from "node:fs/promises";
 import { juricode } from "./jurisdictional.js";
 import { watch } from "./watch.js";
 import { calendar } from "./ical.js";
 
+// The page and the modules it imports, the same files GitHub Pages serves.
+const files = {
+  "/": ["index.html", "text/html; charset=utf-8"],
+  "/src/jurisdictional.js": ["src/jurisdictional.js", "text/javascript"],
+  "/src/watch.js": ["src/watch.js", "text/javascript"],
+  "/src/ical.js": ["src/ical.js", "text/javascript"],
+};
+
 // Routes:
+//   GET /                                  the page (it calls the Jurisdictional API itself)
 //   GET /seats?address=…&days=365          JSON (also lat & lng)
 //   GET /calendar.ics?address=…&days=365   an iCalendar feed to subscribe to
 export function app({ lookup = juricode } = {}) {
@@ -12,6 +22,11 @@ export function app({ lookup = juricode } = {}) {
     const params = url.searchParams;
 
     try {
+      if (request.method === "GET" && files[url.pathname]) {
+        const [path, type] = files[url.pathname];
+        return send(response, 200, type, await readFile(new URL(`../${path}`, import.meta.url)));
+      }
+
       if (request.method !== "GET" || !["/seats", "/calendar.ics"].includes(url.pathname)) {
         return send(response, 404, "application/json", JSON.stringify({ error: "Not found" }));
       }

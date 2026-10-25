@@ -1,5 +1,5 @@
 {
-  "name": "jurisdictional-example-available-board-seats",
+  "name": "jurisdictional-available-board-seats",
   "version": "0.1.0",
   "description": "The board, commission and council seats open now or opening soon for any address, as a list or a calendar feed. A prototype on the open Jurisdictional API.",
   "license": "MIT",
@@ -16,6 +16,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/afomi/example-available-board-seats.git"
+    "url": "git+https://github.com/afomi/available-board-seats.git"
   }
 }
