@@ -4,7 +4,7 @@ For any U.S. address, find the board, commission and council seats you could fil
 Residents learn when to apply or run, and can subscribe to the same list as a calendar feed.
 
 This is an open-source prototype of idea 03 on [jurisdictional.org/developers](https://jurisdictional.org/developers).
-It is one call to the free, keyless [Jurisdictional API](https://jurisdictional.org/llms.txt):
+It is one call to the free [Jurisdictional API](https://jurisdictional.org/llms.txt):
 
 ```
 GET https://jurisdictional.org/api/v1/juricode?address=…&include=seats
@@ -83,6 +83,15 @@ Filling it is the other half of this prototype: an AI agent on the [MCP server](
 
 ```sh
 JURISDICTIONAL_BASE_URL=http://localhost:4000 npm start
+```
+
+## Use a token
+
+Without a token the API allows 100 requests a day from your IP.
+A free token, from [jurisdictional.org/auth/cli](https://jurisdictional.org/auth/cli), allows 2,000:
+
+```sh
+JURISDICTIONAL_TOKEN=jur_free_… npm start
 ```
 
 ## License
