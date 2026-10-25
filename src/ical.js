@@ -37,8 +37,12 @@ function text(value) {
 }
 
 // Lines longer than 75 octets continue on the next line after a space (§3.1).
+// TextEncoder rather than Buffer, so this runs in the browser too.
+const encoder = new TextEncoder();
+const decoder = new TextDecoder();
+
 function fold(line) {
-  const bytes = Buffer.from(line);
+  const bytes = encoder.encode(line);
   if (bytes.length <= 75) return line;
 
   const parts = [];
@@ -47,7 +51,7 @@ function fold(line) {
     let end = Math.min(start + (start === 0 ? 75 : 74), bytes.length);
     // Never split a multi-byte UTF-8 character.
     while (end < bytes.length && (bytes[end] & 0xc0) === 0x80) end -= 1;
-    parts.push(bytes.subarray(start, end).toString());
+    parts.push(decoder.decode(bytes.subarray(start, end)));
     start = end;
   }
   return parts.join("\r\n ");
